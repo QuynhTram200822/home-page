@@ -6,8 +6,8 @@ $(document).ready(function () {
     arrows: false,
     draggable: false,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 912,
