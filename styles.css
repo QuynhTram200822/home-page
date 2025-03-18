@@ -21,6 +21,9 @@ a {
   background-color: #fdf0df;
 }
 /* Section Header */
+.header-ctn {
+  background-color: #fdf0df;
+}
 .header {
   width: 100%;
   display: flex;
@@ -263,11 +266,12 @@ a {
 .banner-title-mobi {
   display: none;
 }
-.banner-title-mobi h1 {
+.banner-title-mobi h2 {
   font-size: 32px;
   font-weight: 800;
   line-height: 42px;
   color: #0b0d21;
+  letter-spacing: 0.8px;
 }
 .banner-title-mobi p {
   font-size: 14px;
@@ -409,7 +413,7 @@ a {
     bottom: -3px;
     left: 53.5%;
   }
-  .banner-title-mobi h1 {
+  .banner-title-mobi h2 {
     letter-spacing: 0.75px;
     margin-bottom: 12px;
   }
@@ -565,7 +569,7 @@ a {
 
 /* Section Features */
 .features {
-  padding: 170px 0px;
+  padding: 170px 0px 160px;
 }
 .features-title {
   text-align: center;
@@ -578,11 +582,13 @@ a {
   font-weight: 800;
   letter-spacing: 0.6px;
   margin-bottom: 19px;
+  color: #0b0d21;
 }
 .features-title p {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+  color: #686977;
 }
 [data-tab-content] {
   display: none;
@@ -717,7 +723,7 @@ a {
 }
 @media (max-width: 480px) {
   .features {
-    padding: 99px 0px;
+    padding: 99px 0px 54px;
   }
   .features-title h2 {
     font-size: 25px;
@@ -812,7 +818,7 @@ a {
   object-fit: cover;
   border-radius: 12px;
 }
-.courses {
+.category-courses .courses {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -828,7 +834,7 @@ a {
   background-color: transparent;
   height: 100%;
 }
-.courses .active {
+.courses-box:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.07);
   background-color: #fff;
 }
@@ -861,7 +867,7 @@ a {
   .category-courses {
     gap: 50px;
   }
-  .courses {
+  .category-courses .courses {
     width: 66%;
   }
   .category-video {
@@ -876,7 +882,7 @@ a {
     flex-direction: column;
   }
   .category-video,
-  .courses {
+  .category-courses .courses {
     width: 100%;
   }
 }
@@ -904,7 +910,7 @@ a {
   .category-courses {
     gap: 31px;
   }
-  .courses {
+  .category-courses .courses {
     grid-template-columns: 1fr;
     width: 100%;
     row-gap: 16px;
@@ -912,3 +918,240 @@ a {
   }
 }
 /* End Section Features */
+
+/* Section Courses */
+.section-courses {
+  background-color: #fdf0df;
+  padding: 103px 0px;
+}
+.courses-title {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 68px;
+}
+.courses-title h2 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 19px;
+  color: #0b0d21;
+}
+.courses-title p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin-bottom: 19px;
+  color: #686977;
+}
+.courses-ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+.card {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 21px 19px 19px 21px;
+}
+.card:hover .card-btn {
+  background-color: #ffee00;
+  border: 1px solid #ffee00;
+}
+.card-img {
+  height: 278px;
+  margin-bottom: 22px;
+}
+.card-img img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.card-tag {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #434ec4;
+}
+.card-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #0b0d21;
+  margin-top: 12px;
+  margin-bottom: 11px;
+  letter-spacing: -0.1px;
+}
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 11px;
+}
+.card-info-ava {
+  width: 20px;
+  height: 20px;
+}
+.card-info-ava img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card-info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #83848c;
+}
+.card-detail {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  color: #686977;
+  margin-bottom: 21px;
+}
+.card-detail-hour,
+.card-detail-class,
+.card-detail-sale {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-card p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #0b0d21;
+}
+.card-btn {
+  width: 120px;
+  padding: 14px 0px;
+  border-radius: 6px;
+  border: 1px solid #0b0d21;
+  background-color: transparent;
+  color: #0b0d21;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+.btn-cards-ctn {
+  margin: 0 auto;
+  width: 204px;
+  padding: 69px 0px 12px;
+}
+.view-all-btn {
+  padding: 17px 32px;
+  border-radius: 8px;
+  background-color: #ffee00;
+  border: 1px solid #ffee00;
+  color: #0b0d21;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Responsive */
+/* 912px */
+@media (max-width: 912px) {
+  .section-courses {
+    padding: 80px 0px;
+  }
+  .courses-title {
+    width: 100%;
+  }
+  .courses-ctn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .courses-ctn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .section-courses {
+    padding: 57px 0px;
+  }
+  .courses-title {
+    margin: 0 auto 26px;
+  }
+  .courses-title h2 {
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+  }
+  .courses-title p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 19px;
+  }
+  .courses-ctn {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 28px;
+  }
+  .card {
+    padding: 14px 14px 15px 14px;
+  }
+  .card-img {
+    height: 262px;
+    margin-bottom: 16px;
+  }
+  .card-name {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 1px;
+    margin-bottom: 11px;
+    letter-spacing: -0.2px;
+  }
+  .card-info {
+    margin-bottom: 14px;
+  }
+  .card-info p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+  }
+  .card-detail {
+    gap: 19px;
+    margin-bottom: 18px;
+  }
+  .card-detail-hour,
+  .card-detail-class,
+  .card-detail-sale {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+  .footer-card p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .card-btn {
+    width: 75px;
+    padding: 9px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .btn-cards-ctn {
+    padding: 38px 0px 12px;
+  }
+}
+
+/* End Section Courses */
