@@ -1215,7 +1215,6 @@ a {
   transition: all 0.3s ease;
   color: transparent !important;
 }
-
 .slick-dots li.slick-active button::before {
   background-color: #0b0d21 !important;
 }
@@ -1303,67 +1302,67 @@ a {
 @media (max-width: 912px) {
   .testimonial {
     padding: 80px 0px;
-}
-.testimonial-title {
-  flex-direction: column;
-  gap: 25px;
-}
+  }
+  .testimonial-title {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 @media (max-width: 700px) {
 }
 @media (max-width: 480px) {
   .testimonial {
     padding: 51px 0px;
-}
-.testimonial-title {
-  flex-direction: column;
-  gap: 12px;
-}
+  }
+  .testimonial-title {
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.testimonial-title .title-ctn h3 {
-  font-size: 26px;
-  line-height: 36px;
-  letter-spacing: 0.2px;
-}
-.testimonial-title .desc-ctn p {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-}
-.testimonial-slider{
-  margin-top: 27px !important;
-}
-.slider-card {
-  padding: 21px 7px;
-}
-.slider-card-title {
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 14px;
-}
-.content-review {
-  gap: 11px;
-}
-.review-text p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 28px;
-}
-.line {
-  width: 113%;
-  margin-left: -37px;
-}
-.review-info {
-  gap: 15px;
-  margin-top: 15px;
-  margin-left: -38px;
-}
-.review-info-detail p {
-  letter-spacing: 0.9px !important;
-  margin-bottom: 1px !important;
-}
-.slick-dots {
-  bottom: -17% !important;
-}
+  .testimonial-title .title-ctn h3 {
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+  }
+  .testimonial-title .desc-ctn p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+  .testimonial-slider {
+    margin-top: 27px !important;
+  }
+  .slider-card {
+    padding: 21px 7px;
+  }
+  .slider-card-title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+  .content-review {
+    gap: 11px;
+  }
+  .review-text p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+  .line {
+    width: 113%;
+    margin-left: -37px;
+  }
+  .review-info {
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: -38px;
+  }
+  .review-info-detail p {
+    letter-spacing: 0.9px !important;
+    margin-bottom: 1px !important;
+  }
+  .slick-dots {
+    bottom: -17% !important;
+  }
 }
 /* End Section Testimonial */
