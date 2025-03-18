@@ -7,15 +7,20 @@
   <!-- Css -->
   <link rel="stylesheet" href="styles.css">
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
   <!-- icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Js -->
+  <script src="tabs.js" defer></script>
   <title>Document</title>
 </head>
 
 <body>
+  <!-- Section Banner -->
   <section class="banner">
     <div class="container">
       <div class="header">
@@ -52,9 +57,6 @@
             </h1>
             <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ QUỐC TẾ THIỆN LONG</h2>
             <p>Xây dựng ước mơ - Kiến tạo tương lai</p>
-            <div class="i-book">
-              <img src="./imgs/book.png">
-            </div>
           </div>
           <div class="banner-title-mobi">
             <h1>
@@ -94,12 +96,7 @@
           </div>
           <div class="image-box">
             <img src="./imgs/banner4.png">
-            <div class="info">
-              <i class="bi bi-mouse"></i>
-              <span>Scroll Down</span>
-            </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -120,6 +117,113 @@
         <div class="content-stories">
           <p class="num">310K+</p>
           <p class="text">Trendy Subjects</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section Features -->
+  <section class="features">
+    <div class="container">
+      <div class="features-title">
+        <h2>Providing the best<br> solutions for your study</h2>
+        <p>You learn today and earn tomorrow. The roots of education are bitter but the fruits are sweet.</p>
+      </div>
+      <ul class="tabs">
+        <li data-tab-target="#recorded" class="active tab">Recorded Class</li>
+        <li data-tab-target="#live" class="tab">Live Class</li>
+        <li data-tab-target="#support" class="tab">Lifetime support</li>
+      </ul>
+      <div class="tab-content">
+        <div id="recorded" data-tab-content class="active">
+          <div class="recorded-content">
+            <div class="recorded-content-title">
+              <div class="title-container">
+                <h3>Recorded class gives you more flexibility to learn faster.</h3>
+                <p>
+                  You learn today and earn tomorrow. The roots of education are bitter but the fruits are sweet. If
+                  you
+                  learn today you can lead tomorrow.
+                </p>
+                <a href="#" class="feature-btn">Start Learning</a>
+              </div>
+            </div>
+            <div class="recorded-content-video">
+              <img src="./imgs/feature1.png">
+            </div>
+          </div>
+          <div class="category-ctn">
+            <div class="category-title">
+              <div class="title-ctn">
+                <h3>
+                  Explore courses by category
+                </h3>
+              </div>
+              <div class="desc-ctn">
+                <p>You learn today and earn tomorrow. The roots of education are bitter but the fruits are sweet. If you
+                  learn today you can lead tomorrow. Explore the best categories.</p>
+              </div>
+
+            </div>
+            <div class="category-courses">
+              <div class="category-video">
+                <img src="./imgs/category.png">
+              </div>
+              <div class="courses">
+                <a href="#">
+                  <div class="courses-box active">
+                    <div class="icon">
+                      <img src="./imgs/icon1.png">
+                    </div>
+                    <p class="courses-name">
+                      Design sector
+                    </p>
+                    <p class="courses-quatity">123 Courses</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="courses-box">
+                    <div class="icon">
+                      <img src="./imgs/icon2.png">
+                    </div>
+                    <p class="courses-name">
+                      Development sector
+                    </p>
+                    <p class="courses-quatity">123 Courses</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="courses-box">
+                    <div class="icon">
+                      <img src="./imgs/icon3.png">
+                    </div>
+                    <p class="courses-name">
+                      Marketing sector
+                    </p>
+                    <p class="courses-quatity">123 Courses</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="courses-box">
+                    <div class="icon">
+                      <img src="./imgs/icon4.png">
+                    </div>
+                    <p class="courses-name">
+                      Others sector
+                    </p>
+                    <p class="courses-quatity">123 Courses</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="live" data-tab-content>
+          <h1>Pricing</h1>
+          <p>Some information on pricing</p>
+        </div>
+        <div id="support" data-tab-content>
+          <h1>About</h1>
+          <p>Let me tell you about me</p>
         </div>
       </div>
     </div>
