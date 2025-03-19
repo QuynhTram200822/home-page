@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(".testimonial-slider").slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     infinite: true,
     arrows: false,
     draggable: false,
